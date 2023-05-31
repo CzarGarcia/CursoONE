@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function saltoLinea(){
+            document.write("<br>"); 
+        }
+
+        function imprimir(mensaje){
+            document.write(mensaje);   
+            saltoLinea();  
+        }
+
+        var numero = Math.round(Math.random()*10);
+
+        var numeroDado = parseInt(prompt("Dame un numero!"));
+
+        if(numeroDado<numero){
+        imprimir(`El numero: ${numero} es mayor a ese!`);
+        }else{
+            imprimir("No se que sigue");
+        }
+        
+        imprimir(`El numero: ${numero} es mayor a ese!`);
+
+        imprimir(numero);
+
+
+    </script>
+</body>
+</html>

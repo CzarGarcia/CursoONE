@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año mundial de la fifa</title>
+</head>
+<body>
+
+<h1>Programa de los años del fifa</h1>
+    
+    <script>
+
+          function saltoLinea(){
+            document.write("<br>"); 
+        }
+
+        function imprimir(mensaje){
+            document.write(mensaje);   
+            saltoLinea();  
+        }
+        
+        var anho = 1930;
+        document.write(`Hubo mundial en el año ${anho}, de fifa`)
+        saltoLinea();
+
+        var limita = parseInt(prompt("QUe limite?"));
+        
+        while(anho <= limita){
+            document.write(`Hubo mundial en el año ${anho}, de fifa`)
+            saltoLinea();
+            anho = anho + 4;
+
+        }
+
+        document.write("fin");
+
+    </script>
+</body>
+</html>

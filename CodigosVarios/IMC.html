@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+             function saltoLinea(){
+            document.write("<br>"); 
+        }
+
+        function imprimir(mensaje){
+            document.write(mensaje); 
+            
+        }
+
+        function CalcularIMC(peso, altura){
+            imc = peso/(altura*altura);
+            return imc;
+        }
+
+        peso = prompt("Peso: ");
+        altura = prompt("Altura: ");
+
+        CalcularIMC(peso,altura);
+        
+        // var peso = 71;
+        // var altura = 1.75;
+        // var imc = (peso / (altura*altura));
+
+        imprimir("El IMC es : " + imc +" :)");
+
+    </script>
+</body>
+</html>
